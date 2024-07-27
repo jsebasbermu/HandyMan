@@ -87,6 +87,7 @@ public class MainActivity extends AppCompatActivity {
                 Database db = new Database(MainActivity.this);
                 String userType = db.checkUserCredentials(username, password);
                 saveTypeOfUser(userType);
+                saveTypeOfUser(userType);
                 if (userType != null) {
                     Intent intent;
                     if ("owner".equals(userType)) {
